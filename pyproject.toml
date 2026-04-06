@@ -1,0 +1,43 @@
+[project]
+name = "rdro"
+version = "0.1.0"
+description = "Relative Density Ratio Optimization for Stable and Statistically Consistent Model Alignment"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "accelerate==1.12.0",
+    "datasets==4.4.2",
+    "deepspeed==0.18.4; platform_system == 'Linux'",
+    "flash-attn==2.8.3; platform_system == 'Linux'",
+    "tensorboard==2.20.0",
+    "torch==2.9.1",
+    "transformers==4.57.5",
+    "trl==0.26.2",
+]
+
+[project.optional-dependencies]
+cli = [
+    "ipython",
+]
+
+[tool.uv.extra-build-dependencies]
+deepspeed = [{ requirement = "torch", match-runtime = true }]
+flash-attn = [{ requirement = "torch", match-runtime = true }]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.mypy]
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+check_untyped_defs = true
+
+[tool.ruff]
+line-length = 120
+
+[tool.uv]
+exclude-newer = "1 week"
