@@ -1,7 +1,7 @@
 # Relative Density Ratio Optimization for Stable and Statistically Consistent Model Alignment
 
 ## About
-
+Please read [LICENCE.md](LICENCE.md) before reading or using the files.
 
 ## Note
 We recommend using 8× H100 GPUs or a comparable high-end GPU setup for training.
