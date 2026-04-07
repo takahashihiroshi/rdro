@@ -1,6 +1,20 @@
 # Relative Density Ratio Optimization for Stable and Statistically Consistent Model Alignment
 
 ## About
+This is a pytorch implementation of the following paper [[arXiv]](https://arxiv.org/abs/2604.04410):
+
+```
+@misc{takahashi2026relativedensityratiooptimization,
+      title={Relative Density Ratio Optimization for Stable and Statistically Consistent Model Alignment}, 
+      author={Hiroshi Takahashi and Tomoharu Iwata and Atsutoshi Kumagai and Sekitoshi Kanai and Masanori Yamada and Kosuke Nishida and Kazutoshi Shinoda},
+      year={2026},
+      eprint={2604.04410},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2604.04410}, 
+}
+```
+
 Please read [LICENCE.md](LICENCE.md) before reading or using the files.
 
 ## Note
